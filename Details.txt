@@ -1,0 +1,56 @@
+
+Topics:
+  Local:
+    1. Local DB Communication via Post-Man
+      CRUD ---> Executed Successfully
+    2. Local DB Communication via Local Front-End
+
+      FE <-> Nodejs 
+        CORS ( Cross Origin Resource Sharing ) will be encountered since backend and front-end are from different origin
+
+        install cors npm package on the backend server and use it as a middleware
+        be carefull on the project since, modifying _id will cause problem
+
+
+  Cloud:
+    DB Create: 
+      1. Sign up on https://cloud.mongodb.com/
+      2. Project Creation
+      3. Database Creation
+      4. Username with Password, Note those details somewhere safe
+      5. Copy the Connect URL and replace with the local url
+    3. Cloud DB Communication via Local Front-End/Nodejs
+  Environment Variables
+    Environment variables are values used for some sensitive data storing
+    in our case we are need of this only for our nodejs application
+
+      1. Create .env
+      2. store values like <key>=<value>
+      3. Access those values with the help **dotenv package & config** & process.env
+
+    4. Cloud DB Communication via local nodejs application via environment variables
+
+    5. Cloud DB Communication via local front-end <-> deployed nodejs via environment variables
+      React .env:
+        REACT_APP_<key>=<value>
+
+      Addition/Changes in .env will need a restart of the server
+
+    6. Cloud DB Communication via cloud front-end via environment variables
+
+    reference:
+      https://dev.to/rajatetc/configure-environment-variables-in-create-react-app-netlify-4b33
+  
+Practice: Nodejs Deployment
+  FE: https://github.com/sanjaysaravanan/axios-formik ( https://visionary-biscotti-8bda46.netlify.app/ )
+  BE: https://github.com/sanjaysaravanan/b42weeng-node ( https://b42weeng-node-service.onrender.com )
+
+Tasks:
+  
+
+Next Session:
+Code/Folder Structure:
+    6. Separate the Core Business Logic and DB Communication
+      reference: 
+        https://www.codespeedy.com/create-separate-routes-file-in-node-express-js/
+Authorization & Authentication

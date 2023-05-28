@@ -19,6 +19,7 @@ Topics:
       3. Database Creation
       4. Username with Password, Note those details somewhere safe
       5. Copy the Connect URL and replace with the local url
+      6. Add 0.0.0.0/0 in the network - this open up the db for anybody with username/password to connect to it
     3. Cloud DB Communication via Local Front-End/Nodejs
   Environment Variables
     Environment variables are values used for some sensitive data storing
@@ -46,7 +47,8 @@ Practice: Nodejs Deployment
   BE: https://github.com/sanjaysaravanan/b42weeng-node ( https://b42weeng-node-service.onrender.com )
 
 Tasks:
-  
+  Student Mentor - Day - 37
+  Deployment Task - Day - 38
 
 Next Session:
 Code/Folder Structure:
